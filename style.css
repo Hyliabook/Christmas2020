@@ -1,0 +1,18 @@
+#topScreen{
+    border-style: ridge;
+    border-color: crimson;
+    height: 270px;
+    width: 480px;
+}
+#bottomScreen{
+    border-style: ridge;
+    border-color: lime;
+    height: 270px;
+    width: 480px;
+}
+
+#botImg
+{
+    height: 100%;
+    width: 100%;
+}
