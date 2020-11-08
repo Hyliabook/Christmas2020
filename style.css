@@ -6,6 +6,7 @@
     border-width: 20px;
     position: absolute;
     left: -0px;
+    top: -1px;
 }
 #bottomScreen{
     border-style: ridge;
@@ -15,7 +16,7 @@
     width: 1080px;
     position: absolute;
     left: -0px;
-    top: 678px;
+    top: 655px;
 }
 
 #botImg
