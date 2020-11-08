@@ -3,10 +3,12 @@
     border-color: crimson;
     height: 608px;
     width: 1080px;
+    border-width: 20px;
 }
 #bottomScreen{
     border-style: ridge;
     border-color: lime;
+    border-width: 20px;
     height: 608px;
     width: 1080px;
 }
