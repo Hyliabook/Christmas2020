@@ -1,6 +1,7 @@
 #topScreen{
     border-style: ridge;
     border-color: crimson;
+    background-color: tomato;
     height: 608px;
     width: 1080px;
     border-width: 20px;
@@ -11,6 +12,7 @@
 #bottomScreen{
     border-style: ridge;
     border-color: lime;
+    background-color: chartreuse;
     border-width: 20px;
     height: 608px;
     width: 1080px;
