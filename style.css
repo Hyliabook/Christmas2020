@@ -4,6 +4,8 @@
     height: 608px;
     width: 1080px;
     border-width: 20px;
+    position: absolute;
+    left: -0px;
 }
 #bottomScreen{
     border-style: ridge;
@@ -11,6 +13,9 @@
     border-width: 20px;
     height: 608px;
     width: 1080px;
+    position: absolute;
+    left: -0px;
+    top: 678px;
 }
 
 #botImg
