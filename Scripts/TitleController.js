@@ -34,7 +34,7 @@ class TitleController extends GameObject
         titControl.initButton = null;
         document.querySelector("#introText").remove();
 
-        controller.mainVideo.src = "lol this is a source"; 
+        controller.mainVideo.src = "https://www.dropbox.com/s/zxb5fl5z0hk7ai0/HBIUniversal.mp4?raw=1"; 
         controller.mainVideo.load();
         //controller.mainVideo.crossOrigin = "anonymous";
         controller.mainVideo.play();
