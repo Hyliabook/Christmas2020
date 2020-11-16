@@ -38,7 +38,7 @@ class TitleController extends GameObject
         controller.mainVideo.load();
         //controller.mainVideo.crossOrigin = "anonymous";
         controller.mainVideo.play();
-        controller.mainVideo.muted = false;
+        //controller.mainVideo.muted = false;
     }
 
 }
