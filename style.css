@@ -1,7 +1,13 @@
+@font-face
+{
+    font-family: crash;
+    src: url("Fonts/crashFont.ttf");
+}
+
 #topScreen{
     border-style: ridge;
     border-color: crimson;
-    background-color: tomato;
+    background-color: black;
     height: 608px;
     width: 1080px;
     border-width: 20px;
@@ -12,7 +18,7 @@
 #bottomScreen{
     border-style: ridge;
     border-color: lime;
-    background-color: chartreuse;
+    background-color: black;
     border-width: 20px;
     height: 608px;
     width: 1080px;
@@ -25,6 +31,22 @@
 {
     height: 100%;
     width: 100%;
+}
+
+#topVideo
+{
+    height: inherit;
+    width: inherit;
+}
+
+#introText
+{
+    font-family: crash;
+    font-size: 72pt;
+    color: orangered;
+    stroke: gray;
+    stroke-width: 10pt;
+    text-align: center;
 }
 
 body{
