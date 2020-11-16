@@ -34,11 +34,11 @@ class TitleController extends GameObject
         titControl.initButton = null;
         document.querySelector("#introText").remove();
 
-        controller.mainVideo.src = "https://drive.google.com/uc?export=download&id=1zLZV7AaQaKaWMX9CXnnX91pyR3Gw9gD-"; 
+        controller.mainVideo.src = "./Scenes/TitleScreen/HBIUniversal.mp4"; 
         controller.mainVideo.load();
         //controller.mainVideo.crossOrigin = "anonymous";
         controller.mainVideo.play();
-        //controller.mainVideo.muted = false;
+        controller.mainVideo.muted = false;
     }
 
 }
