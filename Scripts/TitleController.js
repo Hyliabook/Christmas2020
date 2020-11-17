@@ -3,6 +3,8 @@ class TitleController extends GameObject
 
     initButton;
     gameController;
+    saveText1;
+    saveText2;
 
 
     constructor(type,sid,sx,sy,sheight,swidth, imgSrc)
@@ -23,6 +25,8 @@ class TitleController extends GameObject
         this.initButton = new GameObject("image", "initButton", centerX-(butWidth * 2), centerY-(butWidth/2), butWidth,butHeight, "./Scenes/TitleScreen/yesHoney.png");
         this.initButton.element.onclick = this.AgreeToPolicy;
 
+        console.log("what the fuck");
+
         this.initButton.StopUpdate();
     }
 
@@ -34,11 +38,42 @@ class TitleController extends GameObject
         titControl.initButton = null;
         document.querySelector("#introText").remove();
 
-        controller.mainVideo.src = "https://www.dropbox.com/s/zxb5fl5z0hk7ai0/HBIUniversal.mp4?raw=1"; 
-        controller.mainVideo.load();
-        //controller.mainVideo.crossOrigin = "anonymous";
-        controller.mainVideo.play();
+        controller.SwapClip("./Scenes/TitleScreen/Video/HBIUniversal.mp4", "HBIUniversal");
         controller.mainVideo.muted = false;
+    }
+
+    Update()
+    {
+        let thisObject = controller.titleController;
+    }
+
+    HBIUniversalEnd()
+    {
+        if(localStorage.getItem("flags") == null)
+        {
+            this.gameController.SwapClip("./Scenes/TitleScreen/Video/NoSaveData.mp4", "NoSaveData");
+            this.InitializeSaveData();
+        }
+        else
+        {
+            this.LoadSaveData();
+        }
+    }
+
+    InitializeSaveData(){
+        this.gameController.flags = {
+            "intro" : false
+        };
+    }
+
+    LoadSaveData()
+    {
+
+    }
+
+    TitleAppear()
+    {
+        this.gameController.SwapClip("./Scenes/TitleScreen/Video/title.mp4");
     }
 
 }

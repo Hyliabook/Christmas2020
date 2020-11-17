@@ -51,10 +51,10 @@ class GameObject
             this.element = null;
         }
 
-        this.updateInstance = setInterval(this.Update, 16.3333, this);
+        this.updateInstance = requestAnimationFrame(this.Update);
     }
 
-    Update(thisObject)
+    Update()
     {
         
     }
@@ -71,12 +71,12 @@ class GameObject
 
     StopUpdate()
     {
-        clearInterval(this.updateInstance);
+        cancelAnimationFrame(this.updateInstance);
     }
 
     StartUpdate()
     {
-        this.updateInstance = setInterval(this.Update, 16.3333, this);
+        this.updateInstance = requestAnimationFrame(this.Update);
     }
 
     SetStyle(styleParams)

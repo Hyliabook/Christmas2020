@@ -4,6 +4,12 @@
     src: url("Fonts/crashFont.ttf");
 }
 
+@font-face
+{
+    font-family: komika;
+    src: url("Fonts/komika.ttf");
+}
+
 #topScreen{
     border-style: ridge;
     border-color: crimson;
@@ -51,4 +57,18 @@
 
 body{
     background-color: cornflowerblue;
+}
+
+#saveDataMessage
+{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    z-index: 5;
+    font-family: komika;
+    color: ivory;
+    stroke: dodgerblue;
+    stroke-width: 5px;
+    font-size: 48pt;
+    text-align: center;
 }
